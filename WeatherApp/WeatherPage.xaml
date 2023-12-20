@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WeatherApp.WeatherPage"
+             Title="WeatherPage"
+             Shell.NavBarIsVisible="False"
+             >
+    <VerticalStackLayout
+        Spacing="25"
+        Padding="0,0"
+        VerticalOptions="StartAndExpand"
+        Margin="0,100,0,0">
+
+        <Label x:Name="LblName"
+        HorizontalOptions="Center"
+        FontSize="60"
+        FontFamily="PoppinsSemibold"
+        Margin="0,0,0,-50"
+        TextColor= "Black"/>
+
+        <Label x:Name="LblCurTemp"
+               HorizontalOptions="Center"
+               FontSize="60"
+               FontFamily="PoppinsSemibold"/>
+
+        <Label x:Name="LblDescription"
+               HorizontalOptions="Center"
+               FontSize="15"
+               FontFamily="SublimaBold"
+               Margin="0,-40,0,0"/>
+
+        <HorizontalStackLayout
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="CenterAndExpand"
+            Spacing="8"
+            Margin="0,-25,0,0">
+
+            <Label x:Name="LblMinTemp"
+                   HorizontalOptions="Center"
+                   FontSize="15"
+                   FontFamily="PoppinsSemibold"/>
+
+            <Label x:Name="LblMaxTemp"
+                   HorizontalOptions="Center"
+                   FontSize="15"
+                   FontFamily="PoppinsSemibold"/>
+
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="CenterAndExpand"
+            Spacing="1"
+            Margin="0,20,0,0">
+
+            <Label Text="Wind Speed:"/>
+            <Label x:Name="LblWindSpeed"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="CenterAndExpand"
+            Spacing="1"
+            Margin="0,-20,0,0">
+            
+            <Label x:Name="LblDirection"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="CenterAndExpand"
+            Spacing="5"
+            Margin="0,-20,0,0">
+            
+            <Label x:Name="LblPressure"/>
+
+            <Label x:Name="LblHumidity"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="CenterAndExpand"
+            Spacing="5"
+            Margin="0,-20,0,0">
+
+            <Label x:Name="LblSunRise"/>
+
+            <Label x:Name="LblSunSet"/>
+        </HorizontalStackLayout>
+
+
+
+
+    </VerticalStackLayout>
+</ContentPage>

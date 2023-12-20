@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WeatherApp.MainPage"
+             Shell.NavBarIsVisible="False"
+             >
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="0,0"
+            VerticalOptions="Center">
+
+            <StackLayout Spacing="0" Margin="0,-200,0,0">
+                <Label Text="welcome."
+                       FontFamily="SublimaBold"
+                       FontSize="50"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       MinimumWidthRequest="250"
+                       WidthRequest="250"
+                           />
+            </StackLayout>
+            
+            <AbsoluteLayout HorizontalOptions="Center" VerticalOptions="Center" Margin="0,100,0,0">
+                <Image Source="leaves.png"
+                       HeightRequest="350"
+                       WidthRequest="500"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       AbsoluteLayout.LayoutFlags="All"
+                       AbsoluteLayout.LayoutBounds="0,0,1,0.5"
+                       />
+                <Image Source="walking.png"
+                       SemanticProperties.Description="People Walking"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       MaximumHeightRequest="450"
+                       WidthRequest="400"
+                       AbsoluteLayout.LayoutFlags="All"
+                       AbsoluteLayout.LayoutBounds="0,0,1,0.5"
+                           />
+            </AbsoluteLayout>
+
+            <StackLayout Padding="100" HorizontalOptions="Center" Margin="0,20,0,0" Spacing="-25">
+                <Label Text="Plan your day with our intuitive weather app"
+                       FontFamily="PoppinsSemibold"
+                       FontSize="12"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       MinimumWidthRequest="150"
+                       Padding="0,20,0,0"/>
+                <Label Text="Enter a Zip Code to see current weather"
+                       FontFamily="PoppinsSemibold"
+                       FontSize="12"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       MinimumWidthRequest="150"
+                       Padding="0,20,0,0"/>
+            </StackLayout>
+
+            <StackLayout Margin="0,-80,0,20">
+                <Entry x:Name="TxtEntry"
+                       Placeholder="Enter Zip Code"
+                       HorizontalOptions="Center"
+                       HorizontalTextAlignment="Center"
+                       VerticalOptions="Center"
+                       MaximumHeightRequest="40"
+                       MinimumHeightRequest="30"
+                       WidthRequest="150"
+                       FontFamily="SublimaBold"/>
+            </StackLayout>
+
+            <StackLayout>
+                <Button x:Name="BtnSearch"
+                        Text="Search"
+                        FontFamily="SublimaBold"
+                        MaximumHeightRequest="40"
+                        MaximumWidthRequest="500"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        WidthRequest="300"
+                        CornerRadius="20"
+                        BackgroundColor="#5c1513"
+                        Clicked="BtnSearch_Clicked"/>
+            </StackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
+ 
